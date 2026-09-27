@@ -1,0 +1,11 @@
+Order Reference,Customer,Order Date,Status,Total Amount,Payment Status
+SO001,شركة النور للديكور,2026-09-01,Locked,1500.00,Paid
+SO002,مؤسسة الأضواء الهادئة,2026-09-03,Quotation Sent,3200.00,Not Paid
+SO003,محمد السيد علي,2026-09-05,Locked,450.00,Paid
+SO004,فاطمة أحمد حسن,2026-09-07,Quotation,1200.00,Not Paid
+SO005,شركة الفيروز للتجارة,2026-09-10,Locked,5400.00,Paid
+SO006,محمود عبد الله,2026-09-12,Quotation Sent,850.00,Not Paid
+SO007,معرض النساجون الشرقيون,2026-09-15,Locked,9600.00,Paid
+SO008,ياسمين إبراهيم,2026-09-18,Quotation,670.00,Not Paid
+SO009,شركة الهنا للاستيراد,2026-09-20,Locked,3100.00,Paid
+SO010,كريم عبد العزيز,2026-09-22,Quotation Sent,1800.00,Not Paid

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-inherit="point_of_sale.ProductScreen" t-inherit-mode="extension">
+        <xpath expr="//OrderSummary" position="after">
+            <div class="nova-delivery-mode px-2 pt-2">
+                <div class="small text-muted mb-1">نوع الاستلام / Fulfillment Method</div>
+                <div class="d-flex gap-1">
+                    <button
+                        t-attf-class="btn btn-sm flex-grow-1 {{this.currentDeliveryMode === 'pickup' ? 'btn-primary' : 'btn-outline-secondary'}}"
+                        t-on-click="() => this.setDeliveryMode('pickup')">
+                        استلام من المتجر / Store Pickup
+                    </button>
+                    <button
+                        t-attf-class="btn btn-sm flex-grow-1 {{this.currentDeliveryMode === 'delivery' ? 'btn-primary' : 'btn-outline-secondary'}}"
+                        t-on-click="() => this.setDeliveryMode('delivery')">
+                        توصيل / Delivery
+                    </button>
+                </div>
+            </div>
+        </xpath>
+    </t>
+</templates>
