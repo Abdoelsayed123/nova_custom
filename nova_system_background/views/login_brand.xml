@@ -1,0 +1,17 @@
+<odoo>
+    <template id="login_brand_logo" inherit_id="website.option_header_brand_logo" name="NOVA Login Logo">
+        <xpath expr="//span[@t-field='website.logo']" position="replace">
+            <t t-if="request.httprequest.path.endswith('/web/login')">
+                <img src="/nova_system_background/static/src/img/nova-logo.png"
+                     alt="NOVA" class="img img-fluid" width="95" height="40" loading="lazy"/>
+            </t>
+            <t t-else="">
+                <span t-field="website.logo"
+                      t-options="base_options if editable else dict(base_options, width=95, height=40)"
+                      role="img"
+                      t-att-aria-label="'Logo of %s' % website.name"
+                      t-att-title="website.name"/>
+            </t>
+        </xpath>
+    </template>
+</odoo>

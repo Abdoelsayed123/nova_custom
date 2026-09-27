@@ -1,0 +1,16 @@
+body.o_web_login #wrapwrap {
+    background-color: #38231d;
+    background-image:
+        linear-gradient(112deg, rgba(255, 246, 234, 0.78) 0%, rgba(248, 230, 213, 0.68) 50%, rgba(58, 28, 19, 0.2) 100%),
+        url('/nova_system_background/static/src/img/candle-background.jpg') !important;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+@media (max-width: 767px) {
+    body.o_web_login #wrapwrap {
+        background-attachment: scroll;
+        background-position: 58% center;
+    }
+}

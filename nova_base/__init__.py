@@ -1,0 +1,1 @@
+"""NOVA custom base module."""

@@ -1,0 +1,1 @@
+"""NOVA system background style addon."""
